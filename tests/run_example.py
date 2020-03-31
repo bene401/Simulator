@@ -9,12 +9,12 @@ from simulator.envs import *
 
 def running_example():
     mapped_matrix_int = np.array([[1, -100, 3], [5, 4, 2], [6, 7, 8]])
-    M, N = mapped_matrix_int.shape
+    M, N = mapped_matrix_int.shape    
     order_num_dist = []
     num_valid_grid = 8
     idle_driver_location_mat = np.zeros((144, 8))
 
-    for ii in np.arange(144):
+    for ii in np.arange(144):     #Erstellen von order_num_dist und idle_driver_location_mat  
         time_dict = {}
         for jj in np.arange(M*N):  # num of grids
             time_dict[jj] = [2]
@@ -25,18 +25,19 @@ def running_example():
 
     n_side = 6
     l_max = 2
-    order_time = [0.2, 0.2, 0.15,
-                  0.15,  0.1,  0.1,
-                  0.05, 0.04,  0.01]
+    order_time = [0.5, 0.5]
+                #[0.2, 0.2 , 0.15,
+                #   0.15,  0.1,  0.1,
+                #   0.05, 0.04,  0.01]
     order_price = [[10.17, 3.34],  # mean and std of order price when duration is 10 min
-                   [15.02, 6.90],  # mean and std of order price when duration is 20 min
-                   [23.22, 11.63],
-                   [32.14, 16.20],
-                   [40.99, 20.69],
-                   [49.94, 25.61],
-                   [58.98, 31.69],
-                   [68.80, 37.25],
-                   [79.40, 44.39]]
+                   [15.02, 6.90]]  # mean and std of order price when duration is 20 min
+                #    [23.22, 11.63],
+                #    [32.14, 16.20],
+                #    [40.99, 20.69],
+                #    [49.94, 25.61],
+                #    [58.98, 31.69],
+                #    [68.80, 37.25],
+                #    [79.40, 44.39]]
 
     order_real = []
     onoff_driver_location_mat = []
