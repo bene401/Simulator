@@ -13,13 +13,14 @@ def running_example():
     order_num_dist = []
     num_valid_grid = 15
     idle_driver_location_mat = np.zeros((144, 15))
+    idle_driver_location_mat[0,:]=[2]*num_valid_grid
 
     for ii in np.arange(144):     #Erstellen von order_num_dist und idle_driver_location_mat  
         time_dict = {}
         for jj in np.arange(M*N):  # num of grids
             time_dict[jj] = [2]
         order_num_dist.append(time_dict)
-        idle_driver_location_mat[ii, :] = [2] * num_valid_grid
+        #idle_driver_location_mat[ii, :] = [2] * num_valid_grid
 
     idle_driver_dist_time = [[10, 1] for _ in np.arange(144)]
 
