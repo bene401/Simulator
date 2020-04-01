@@ -53,6 +53,12 @@ def running_example():
                                          [0.09090909, 1.46398452],
                                          [0.09090909, 1.46398452],
                                          [0.09090909, 1.46398452],
+                                         [0.09090909, 1.46398452],
+                                         [0.09090909, 1.46398452],
+                                         [0.09090909, 1.46398452],
+                                         [0.09090909, 1.46398452],
+                                         [0.09090909, 1.46398452],
+                                         [0.09090909, 1.46398452],
                                          [0.09090909, 1.46398452]])
     env = CityReal(mapped_matrix_int, order_num_dist, idle_driver_dist_time, idle_driver_location_mat,
                    order_time, order_price, l_max, M, N, n_side, 1, np.array(order_real), np.array(onoff_driver_location_mat))
