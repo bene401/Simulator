@@ -8,11 +8,11 @@ from simulator.envs import *
 
 
 def running_example():
-    mapped_matrix_int = np.array([[1, -100, 3  ,9], [5, 4, 2,10], [6, 7, 8,11], [12, 13, 14,15]])
+    mapped_matrix_int = np.array([[1, -100, 3  ,9], [5, 4, 2, 10], [6, 7, 8, 11], [12, 13, 14, 15]])
     M, N = mapped_matrix_int.shape    
     order_num_dist = []
-    num_valid_grid = 11
-    idle_driver_location_mat = np.zeros((144, 11))
+    num_valid_grid = 15
+    idle_driver_location_mat = np.zeros((144, 15))
 
     for ii in np.arange(144):     #Erstellen von order_num_dist und idle_driver_location_mat  
         time_dict = {}
