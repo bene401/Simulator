@@ -13,7 +13,7 @@ def running_example():
     order_num_dist = []
     num_valid_grid = 15
     idle_driver_location_mat = np.zeros((144, 15))
-    idle_driver_location_mat[0,:]=[2]*num_valid_grid
+    idle_driver_location_mat[:,0]=[2]
 
     for ii in np.arange(144):     #Erstellen von order_num_dist und idle_driver_location_mat  
         time_dict = {}
@@ -67,7 +67,7 @@ def running_example():
     state = env.reset_clean()
     order_response_rates = []
     T = 0
-    max_iter = 1000
+    max_iter = 144
     while T < max_iter:
         # if T % 5 == 0:
         #     state = env.reset_clean(generate_order=2)
