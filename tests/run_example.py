@@ -8,11 +8,11 @@ from simulator.envs import *
 
 
 def running_example():
-    mapped_matrix_int = np.array([[1, -100, 3], [5, 4, 2], [6, 7, 8]])
+    mapped_matrix_int = np.array([[1, -100, 3  ,9], [5, 4, 2,10], [6, 7, 8,11], [12, 13, 14,15]])
     M, N = mapped_matrix_int.shape    
     order_num_dist = []
-    num_valid_grid = 8
-    idle_driver_location_mat = np.zeros((144, 8))
+    num_valid_grid = 11
+    idle_driver_location_mat = np.zeros((144, 11))
 
     for ii in np.arange(144):     #Erstellen von order_num_dist und idle_driver_location_mat  
         time_dict = {}
@@ -24,7 +24,7 @@ def running_example():
     idle_driver_dist_time = [[10, 1] for _ in np.arange(144)]
 
     n_side = 6
-    l_max = 9
+    l_max = 3
     order_time = [0.2, 0.2 , 0.15, 
                   0.15,  0.1,  0.1,
                   0.05, 0.04,  0.01]
@@ -60,7 +60,7 @@ def running_example():
     state = env.reset_clean()
     order_response_rates = []
     T = 0
-    max_iter = 3000
+    max_iter = 1000
     while T < max_iter:
         # if T % 5 == 0:
         #     state = env.reset_clean(generate_order=2)
