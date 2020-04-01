@@ -24,20 +24,20 @@ def running_example():
     idle_driver_dist_time = [[10, 1] for _ in np.arange(144)]
 
     n_side = 6
-    l_max = 2
-    order_time = [0.5, 0.5]
-                #[0.2, 0.2 , 0.15,
-                #   0.15,  0.1,  0.1,
-                #   0.05, 0.04,  0.01]
+    l_max = 9
+    order_time = [0.2, 0.2 , 0.15, 
+                  0.15,  0.1,  0.1,
+                  0.05, 0.04,  0.01]
+                #[0.5, 0.5]
     order_price = [[10.17, 3.34],  # mean and std of order price when duration is 10 min
-                   [15.02, 6.90]]  # mean and std of order price when duration is 20 min
-                #    [23.22, 11.63],
-                #    [32.14, 16.20],
-                #    [40.99, 20.69],
-                #    [49.94, 25.61],
-                #    [58.98, 31.69],
-                #    [68.80, 37.25],
-                #    [79.40, 44.39]]
+                   [15.02, 6.90],  # mean and std of order price when duration is 20 min
+                   [23.22, 11.63],
+                   [32.14, 16.20],
+                   [40.99, 20.69],
+                   [49.94, 25.61],
+                   [58.98, 31.69],
+                   [68.80, 37.25],
+                   [79.40, 44.39]]
 
     order_real = []
     onoff_driver_location_mat = []
