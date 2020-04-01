@@ -22,7 +22,7 @@ def running_example():
         order_num_dist.append(time_dict)
         #idle_driver_location_mat[ii, :] = [2] * num_valid_grid
 
-    idle_driver_dist_time = [[10, 1] for _ in np.arange(144)]
+    idle_driver_dist_time = [[5, 1] for _ in np.arange(144)] #ursprünglich 10
 
     n_side = 6
     l_max = 3
