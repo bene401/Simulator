@@ -60,7 +60,7 @@ def running_example():
     state = env.reset_clean()
     order_response_rates = []
     T = 0
-    max_iter = 144
+    max_iter = 1000
     while T < max_iter:
         # if T % 5 == 0:
         #     state = env.reset_clean(generate_order=2)
